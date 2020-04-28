@@ -19,11 +19,11 @@
 ################################################################################
 
 PKG_NAME="mupen64plus_next"
-PKG_VERSION="0832354"
+PKG_VERSION="ac00773"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPLv2"
-PKG_SITE="https://github.com/libretro/mupen64plus-libretro-nx"
+PKG_SITE="https://github.com/dmrlawson/mupen64plus-libretro-nx"
 PKG_URL="$PKG_SITE.git"
 PKG_GIT_CLONE_BRANCH="develop"
 PKG_DEPENDS_TARGET="toolchain nasm:host"
