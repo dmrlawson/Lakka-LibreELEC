@@ -13,9 +13,9 @@ PKG_LONGDESC="Mesa is a 3-D graphics library with an API."
 PKG_TOOLCHAIN="meson"
 
 if [ "$DEVICE" = "RPi4" ]; then
-  PKG_VERSION="347a3d68cd8ed31fb50a7509f1526a2930d0cd50"
+  PKG_VERSION="8e961b91c320125c81fbae0d8f9f6076ee58aa3c"
   PKG_URL="https://gitlab.freedesktop.org/mesa/mesa/-/archive/$PKG_VERSION/mesa-$PKG_VERSION.tar.gz"
-  PKG_SHA256="07acf280d4f5d5d96f6e4efcce3b9507741bd79127df6e92ecbd8ac1d6495ec6"
+  PKG_SHA256="869ecb3edc668e6dad2c375dde4dbc5071f5e78775df83db8a261b75d1b01c52"
   PKG_DEPENDS_TARGET="toolchain Mako:host expat libdrm vulkan-loader"
 fi
 
