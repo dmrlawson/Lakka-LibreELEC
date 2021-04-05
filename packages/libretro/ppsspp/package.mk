@@ -45,12 +45,19 @@ if [ "$OPENGLES_SUPPORT" = yes ]; then
   PKG_DEPENDS_TARGET+=" $OPENGLES"
 fi
 
+if [ "$DEVICE" = "RPi4" ]; then
+  FORCE_VULKAN=yes
+else
+  FORCE_VULKAN=no
+fi
+
 PKG_CMAKE_OPTS_TARGET="-DLIBRETRO=yes \
                        -DCMAKE_BUILD_TYPE=Release \
                        -DUSE_FFMPEG=yes \
                        -DUSE_SYSTEM_FFMPEG=yes \
                        -DUSE_DISCORD=no \
                        -DUSE_MINIUPNPC=no \
+		       -DFORCE_VULKAN=$FORCE_VULKAN \
                        --target ppsspp_libretro"
 
 if [ "$OPENGL_SUPPORT" = no -a "$OPENGLES_SUPPORT" = yes ]; then
