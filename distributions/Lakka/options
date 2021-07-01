@@ -449,6 +449,7 @@ DISTRO_SRC="http://sources.libreelec.tv/$LIBREELEC_VERSION"
 # disable some cores
   if [ "$PROJECT" = "RPi" ]; then
     LIBRETRO_CORES="${LIBRETRO_CORES// yabasanshiro /}"
+    LIBRETRO_CORES="${LIBRETRO_CORES// ppsspp /}"
     if [ "$DEVICE" = "RPi" -o "$DEVICE" = "GPICase" ]; then
       LIBRETRO_CORES="${LIBRETRO_CORES// 4do /}"
       LIBRETRO_CORES="${LIBRETRO_CORES// beetle-bsnes /}"
